@@ -15,4 +15,5 @@ int main(){
     resultado = ((((cigarros*365)/10)*preço)*anos);
 
     cout << "R$:" << resultado << "\n";
+    system("pause");
 }
