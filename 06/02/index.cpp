@@ -22,7 +22,7 @@ int main(){
         cout << "\tmedia geral: ";
         cin >> alunos[i].mediag;
         if(alunos[i].mediag>5){
-            alunos[i].mediag+=0,5;
+            alunos[i].mediag+=0.5;
         }
     }
     for (int i=1;i<=2;i++){
