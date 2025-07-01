@@ -1,2 +1,0 @@
-texte de igualdade:
-bool ehigual = a== 10 ? true:false;
