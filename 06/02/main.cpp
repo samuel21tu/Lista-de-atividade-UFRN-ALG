@@ -9,6 +9,7 @@ int main(){
     animais animal[8];
     int a = 0, q = 0, i = 0;
     int o = 0;
+    bool r=false;
 
     do{
         cout << "\t1-cadastrar animal";
@@ -28,8 +29,15 @@ int main(){
                     getline(cin, animal[i].nome);
                     cout << "raça do animal: ";
                     getline(cin, animal[i].raca);
-                    cout << "idade do animal: ";
-                    cin >> animal[i].idade;
+                    do{
+                        r=false;
+                        cout << "idade do animal: ";
+                        cin >> animal[i].idade;
+                        if (animal[i].idade<=0){
+                            cout << "digite um numero valido";
+                            r = true;
+                        }
+                    }while(r=true);
                     cin.ignore(); // Clear newline from input buffer
                 }
                 break;
@@ -39,8 +47,8 @@ int main(){
                 }
                 break;
             case 3:
-                o=3;
                 cout << "Saindo..." << endl;
+                o=3;
                 break;
             default:
                 cout << "Opção inválida!" << endl;

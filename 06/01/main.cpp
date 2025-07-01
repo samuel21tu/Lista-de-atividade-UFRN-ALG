@@ -28,6 +28,5 @@ int main(){
     for (int i=1;i<=10;i++){
         cout << alunos[i].matricula <<"\n"<< alunos[i].nome <<"\n"<< alunos[i].endereco <<"\n"<< alunos[i].mediag;
     }
-
-    return 0;
+    
 }
