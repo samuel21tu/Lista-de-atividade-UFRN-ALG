@@ -10,7 +10,7 @@ struct aluno {
 int main(){
     aluno alunos[10];
 
-    for(int i=1;i<=2;i++){
+    for(int i=1;i<=10;i++){
         cout << "-------------aluno" <<i << "----------------";
         cout << "\n\tmatricula: ";
         cin >> alunos[i].matricula;
@@ -25,7 +25,7 @@ int main(){
             alunos[i].mediag+=0,5;
         }
     }
-    for (int i=1;i<=2;i++){
+    for (int i=1;i<=10;i++){
         cout << alunos[i].matricula <<"\n"<< alunos[i].nome <<"\n"<< alunos[i].endereco <<"\n"<< alunos[i].mediag;
     }
 
